@@ -4,8 +4,9 @@
 import os
 import subprocess
 import json
+import sys
 continue_search = "y"
-__version__ = "0.1.0-alpha"
+__version__ = "0.2.0-alpha"
 #Set Default Path to current directory of python executable
 path = os.path.dirname(os.path.realpath(__file__))
 stream = ":$DATA"
@@ -21,12 +22,13 @@ banner = r"""
                                                                                                         
                                                                                                        
 """
-valid_selections = ["0", "1", "2", "3"]
+valid_selections = ["0", "1", "2", "3", "4"]
 def displayMenu():
     print("Please make a selection from the menu below: ")
     print("[1] Scan a specific file for ADS ")
-    print("[2] View a files ADS (Interactive)")
-    print("[3] Save a files ADS (Interactive)")
+    print("[2] View a files ADS (Interactive) ")
+    print("[3] Save a files ADS (Interactive) ")
+    print("[4] Quit Tool ")
 
 print(banner)
 print("Welcome to Alternate Stream Scanner (ASS) and Sniffing Tool! The Interactive ADS Tool!")
@@ -157,3 +159,6 @@ while True:
                             f.write(output)
                         print("File SAVED")
                         user_selection = "0"
+
+            case "4":
+                sys.exit()
