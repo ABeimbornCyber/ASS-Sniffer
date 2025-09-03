@@ -8,7 +8,7 @@
 **ASS-Sniffer** is a Windows-based interactive tool for **detecting, viewing, and extracting Alternate Data Streams (ADS)** from NTFS file systems.  
 It leverages PowerShell under the hood to enumerate hidden streams, display their contents, and optionally export them.
 
-> **Version:** `0.1.0-alpha`  
+> **Version:** `0.2.0-alpha`  
 > **Status:** Alpha — expect bugs, missing features, and possibly explosions
 
 ## Features
@@ -53,6 +53,7 @@ Please make a selection:
 [1] Scan a specific file for ADS
 [2] View a file's ADS (Interactive)
 [3] Save a file's ADS (Interactive)
+[4] Quit Tool
 ```
 
 ### Example: Scanning a file for ADS
